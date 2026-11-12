@@ -1,0 +1,7 @@
+{
+  "workspace.layout": "Workspace %1 — %2 layout",
+  "workspace.switch": "Switch to workspace %1",
+  "layout.tiling": "Tiling",
+  "layout.scrolling": "Scrolling",
+  "layout.floating": "Floating"
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "nurfaizfoat.workspaces",
+  "name": "Jelly Workspaces",
+  "version": "1.1.1",
+  "author": "nurfaizfoat (based on Omarchy)",
+  "description": "Theme-aware workspace indicators with volume-preserving jelly motion",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "JellyWorkspaces.qml"
+  },
+  "barWidget": {
+    "displayName": "Jelly Workspaces",
+    "description": "Workspace switching with an elastic indicator",
+    "category": "Compositor",
+    "allowMultiple": false,
+    "defaults": {
+      "jellyEnabled": true,
+      "jellyDuration": 320,
+      "showLayoutSymbol": false
+    },
+    "schema": [
+      {
+        "key": "showLayoutSymbol",
+        "type": "boolean",
+        "label": "Show layout symbol inside the marker",
+        "defaultValue": false
+      },
+      {
+        "key": "jellyEnabled",
+        "type": "boolean",
+        "label": "Jelly animation",
+        "defaultValue": true
+      },
+      {
+        "key": "jellyDuration",
+        "type": "integer",
+        "label": "Animation duration (milliseconds)",
+        "min": 160,
+        "max": 500,
+        "step": 20,
+        "defaultValue": 320
+      }
+    ]
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.workspaces"
+  }
+}
